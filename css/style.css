@@ -27,7 +27,13 @@ body {
     flex-direction: column;
     align-items: center;
     font-size: 18px;
-    /* background-color: var(--pale); */
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Poppins', sans-serif;
 }
 
 
@@ -59,7 +65,7 @@ header button {
 
 .hero {
     background-image: url(../images/bg-hero-desktop.svg);
-    background-color: var(--grayish);
+    background-color: var(--pale);
 }
 
 .box {
@@ -67,10 +73,22 @@ header button {
     display: grid;
     grid-template-columns: auto auto auto auto;
     border-radius: 10px;
+    margin-left: 6rem;
+    margin-right: 6rem;
 }
 
 .together {
     grid-row: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.together p {
+    margin-top: 1.25rem;
 }
 
 .box figure {
@@ -78,7 +96,7 @@ header button {
 }
 
 .box img {
-    width: 300px;
+    width: 450px;
 }
 
 .build {
@@ -96,7 +114,9 @@ footer {
 }
 
 .one img {
-    width: 500px;
+    width: 700px;
+    margin-left: 3rem;
+    margin-right: 3rem;
 }
 
 .first {
@@ -104,11 +124,22 @@ footer {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+.first p {
+    margin-top: 1.5rem;
+    margin-bottom: 1.25rem;
 }
 
 .two {
     margin-left: 8rem;
     margin-right: 8rem;
+    margin-top: 8.50rem;
+}
+
+.middle {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
