@@ -107,6 +107,21 @@ header button {
 footer {
     background-color: var(--dark);
     width: 100%;
+    color: var(--pale);
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.fixed {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.copyright {
+    float: right;
 }
 
 .one {
@@ -137,11 +152,21 @@ footer {
     margin-left: 8rem;
     margin-right: 8rem;
     margin-top: 8.50rem;
+    margin-bottom: 9rem;
 }
 
 .middle {
     margin-top: 2rem;
     margin-bottom: 2rem;
+}
+
+.build {
+    width: 600px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .bottom {
@@ -157,6 +182,8 @@ footer {
 .about ul,
 .career ul {
     list-style-type: none;
+    font: 400 18px/71px 'Open Sans', sans-serif;
+    margin-top: 1rem;
 }
 
 .about a,
@@ -164,4 +191,37 @@ footer {
 .email a,
 .career a {
     text-decoration: none;
+}
+
+.second,
+.third,
+.fourth {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+}
+
+.location,
+.phone,
+.email {
+    display: inline-flex;
+}
+
+.location p,
+.phone a,
+.email a {
+    padding-left: 1rem;
+}
+
+.location {
+    margin-top: 2rem;
+}
+
+.phone {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+a {
+    color: var(--pale);
 }
