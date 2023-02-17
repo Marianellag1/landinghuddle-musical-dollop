@@ -58,22 +58,27 @@ background-color: var(--pink);
 opacity: 0.5;
 }
 
-/* header {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-} */
 
 header button {
-    background-color: var(--pale);
+    background-color: white;
     color: var(--dark);
     border: none;
     font-weight: 700;
+    width: 50%;
+    grid: 1;
+    grid-column: 3/ span 1;
+    margin-left: 8rem;
 }
 
 header button:active {
-    background-color: var(--pale);
+    background-color: white;
     opacity: 0.5;
+}
+
+header {
+    display: grid;
+    grid: auto/ auto auto;
+    margin: 4rem;
 }
 
 .hero {
@@ -82,7 +87,7 @@ header button:active {
 }
 
 .box {
-    border: solid;
+    box-shadow: 2px 1px 15px rgb(0 0 0 / 20%);
     display: grid;
     grid-template-columns: auto auto auto auto;
     border-radius: 10px;
@@ -113,8 +118,17 @@ header button:active {
 }
 
 .build {
-    border: solid;
+    box-shadow: 2px 1px 15px rgb(0 0 0 / 20%);
     border-radius: 10px;
+    margin-bottom: -62px;
+    z-index: 1;
+    background-color: white;
+}
+
+.build p {
+    margin-bottom: 1.50rem;
+    font-weight: 700;
+    font-size: x-large;
 }
 
 footer {
@@ -246,3 +260,8 @@ footer {
 a {
     color: var(--pale);
 }
+
+.huddle {
+    filter: invert(1);
+}
+/* not so sure how to make the huddle logo white, added filter for now */
