@@ -143,3 +143,25 @@ footer {
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
+
+.bottom {
+    display: inline-flex;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+
+.about ul,
+.career ul {
+    list-style-type: none;
+}
+
+.about a,
+.phone a,
+.email a,
+.career a {
+    text-decoration: none;
+}
